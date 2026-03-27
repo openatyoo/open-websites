@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peel Dental Care - Family Dentist in Brampton | 4.9★ Rating</title>
-    <meta name="description" content="Peel Dental Care in Brampton offers comprehensive family dental services. 4.9-star rating with 392 reviews. Call +1 905-791-4000 to book your appointment today.">
+    <title>Peel Dental Care - Quality Family Dentistry in Brampton, ON</title>
+    <meta name="description" content="Peel Dental Care offers comprehensive dental services in Brampton, ON. 4.9-star rated family dentist. Call (905) 791-4000 to schedule your appointment today.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER -->
+    <!-- SECTION: header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
                     <h1>Peel Dental Care</h1>
+                    <span class="location">Brampton, ON</span>
                 </div>
                 <div class="header-contact">
-                    <a href="tel:+19057914000" class="phone-link">+1 905-791-4000</a>
-                    <a href="#contact" class="cta-button">Book Appointment</a>
+                    <a href="tel:+19057914000" class="phone-number">
+                        <svg class="phone-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        (905) 791-4000
+                    </a>
+                    <button class="book-now-btn" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})">Book Now</button>
                 </div>
             </div>
         </div>
@@ -32,20 +38,30 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h2 class="hero-title">Your Smile is Our Priority</h2>
-                        <p class="hero-subtitle">Comprehensive family dental care in the heart of Brampton. From routine cleanings to advanced treatments, we're here to keep your family smiling.</p>
+                        <h2 class="hero-title">Your Trusted Family Dentist in Brampton</h2>
+                        <p class="hero-subtitle">Experience exceptional dental care with our 4.9-star rated team. We're committed to your family's oral health and beautiful smiles.</p>
                         <div class="hero-rating">
-                            <div class="stars">★★★★★</div>
-                            <span>4.9 stars • 392 Google reviews</span>
+                            <div class="stars">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                            </div>
+                            <span class="rating-text">4.9/5 from 392 Google reviews</span>
                         </div>
                         <div class="hero-cta">
-                            <a href="tel:+19057914000" class="cta-button primary">Call Now</a>
-                            <a href="#contact" class="cta-button secondary">Book Online</a>
+                            <a href="tel:+19057914000" class="cta-primary">Call (905) 791-4000</a>
+                            <button class="cta-secondary" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})">Schedule Online</button>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <div class="hero-placeholder">
-                            <span>Professional Dental Office Image</span>
+                        <div class="hero-image-placeholder">
+                            <svg viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="var(--bg-alt)"/>
+                                <path d="M200 100c-22.09 0-40 17.91-40 40s17.91 40 40 40 40-17.91 40-40-17.91-40-40-40zm0 60c-11.05 0-20-8.95-20-20s8.95-20 20-20 20 8.95 20 20-8.95 20-20 20z" fill="var(--primary)"/>
+                                <text x="200" y="220" text-anchor="middle" fill="var(--text-light)" font-size="14">Professional Dental Care</text>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -53,119 +69,150 @@
         </section>
 
         <!-- SECTION: services -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="section-header">
-                    <h3>Comprehensive Dental Services</h3>
-                    <p>We offer a full range of dental treatments for patients of all ages in Brampton</p>
+                    <h2 class="section-title">Comprehensive Dental Services</h2>
+                    <p class="section-subtitle">From routine cleanings to advanced procedures, we provide complete dental care for your entire family.</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">🦷</div>
-                        <h4>[Suggested: General Dentistry]</h4>
-                        <p>Routine cleanings, exams, fillings, and preventive care to maintain optimal oral health for the whole family.</p>
-                        <a href="#contact" class="service-link">Learn More</a>
+                        <h3>[Suggested: General Dentistry]</h3>
+                        <p>[Suggested: Routine cleanings, examinations, and preventive care to maintain optimal oral health.]</p>
+                        <a href="tel:+19057914000" class="service-cta">Learn More</a>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">✨</div>
-                        <h4>[Suggested: Cosmetic Dentistry]</h4>
-                        <p>Transform your smile with whitening, veneers, and cosmetic treatments designed to boost your confidence.</p>
-                        <a href="#contact" class="service-link">Learn More</a>
+                        <h3>[Suggested: Cosmetic Dentistry]</h3>
+                        <p>[Suggested: Teeth whitening, veneers, and smile makeovers to enhance your confidence.]</p>
+                        <a href="tel:+19057914000" class="service-cta">Learn More</a>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">🔧</div>
-                        <h4>[Suggested: Restorative Dentistry]</h4>
-                        <p>Crowns, bridges, implants, and dentures to restore function and appearance of damaged or missing teeth.</p>
-                        <a href="#contact" class="service-link">Learn More</a>
+                        <h3>[Suggested: Restorative Dentistry]</h3>
+                        <p>[Suggested: Crowns, bridges, fillings, and implants to restore function and appearance.]</p>
+                        <a href="tel:+19057914000" class="service-cta">Learn More</a>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">👶</div>
-                        <h4>[Suggested: Pediatric Dentistry]</h4>
-                        <p>Gentle, specialized care for children in a comfortable environment that makes dental visits enjoyable.</p>
-                        <a href="#contact" class="service-link">Learn More</a>
+                        <div class="service-icon">👨‍👩‍👧‍👦</div>
+                        <h3>[Suggested: Family Dentistry]</h3>
+                        <p>[Suggested: Comprehensive care for patients of all ages, from children to seniors.]</p>
+                        <a href="tel:+19057914000" class="service-cta">Learn More</a>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">⚡</div>
-                        <h4>[Suggested: Emergency Dental Care]</h4>
-                        <p>Prompt treatment for dental emergencies, including pain relief, trauma care, and urgent procedures.</p>
-                        <a href="#contact" class="service-link">Learn More</a>
+                        <div class="service-icon">🚨</div>
+                        <h3>[Suggested: Emergency Dentistry]</h3>
+                        <p>[Suggested: Urgent dental care for accidents, severe pain, and dental emergencies.]</p>
+                        <a href="tel:+19057914000" class="service-cta">Learn More</a>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">😴</div>
-                        <h4>[Suggested: Sedation Dentistry]</h4>
-                        <p>Comfortable dental care for anxious patients with safe, effective sedation options.</p>
-                        <a href="#contact" class="service-link">Learn More</a>
+                        <div class="service-icon">🦴</div>
+                        <h3>[Suggested: Oral Surgery]</h3>
+                        <p>[Suggested: Extractions, wisdom teeth removal, and minor oral surgical procedures.]</p>
+                        <a href="tel:+19057914000" class="service-cta">Learn More</a>
                     </div>
-                </div>
-                <div class="services-cta">
-                    <a href="tel:+19057914000" class="cta-button">Schedule Your Visit Today</a>
                 </div>
             </div>
         </section>
 
         <!-- SECTION: reviews -->
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <div class="section-header">
-                    <h3>What Our Patients Say</h3>
-                    <div class="rating-summary">
-                        <div class="stars-large">★★★★★</div>
-                        <div class="rating-text">
-                            <span class="rating-number">4.9</span>
-                            <span class="rating-details">based on 392 Google reviews</span>
+                    <h2 class="section-title">What Our Patients Say</h2>
+                    <div class="reviews-rating">
+                        <div class="stars-large">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
                         </div>
+                        <span class="rating-detail">4.9 out of 5 stars from 392 Google reviews</span>
                     </div>
                 </div>
                 <div class="reviews-grid">
                     <div class="review-card">
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"[Suggested: Outstanding dental care with a caring team. The staff made me feel comfortable throughout my treatment and the results exceeded my expectations.]"</p>
-                        <div class="review-author">[Suggested: Sarah M.]</div>
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">[Suggested: "Excellent service and very professional staff. Dr. [Name] took great care of my family's dental needs. Highly recommend!"]</p>
+                        <div class="review-author">[Suggested: Patient Name] - Google Review</div>
                     </div>
                     <div class="review-card">
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"[Suggested: Dr. and team are incredibly professional and gentle. They took time to explain everything and made sure I was comfortable during my procedure.]"</p>
-                        <div class="review-author">[Suggested: Michael T.]</div>
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">[Suggested: "Clean facility, friendly staff, and painless procedures. Been coming here for years and always satisfied."]</p>
+                        <div class="review-author">[Suggested: Patient Name] - Google Review</div>
                     </div>
                     <div class="review-card">
-                        <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"[Suggested: Best dental experience I've had! The office is modern, clean, and the staff is friendly. Highly recommend for anyone in Brampton.]"</p>
-                        <div class="review-author">[Suggested: Jennifer L.]</div>
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">[Suggested: "Great with kids! My children actually look forward to their dental visits now. Thank you for making it a positive experience."]</p>
+                        <div class="review-author">[Suggested: Patient Name] - Google Review</div>
                     </div>
                 </div>
                 <div class="reviews-cta">
-                    <p>Ready to experience exceptional dental care?</p>
-                    <a href="#contact" class="cta-button">Book Your Appointment</a>
+                    <a href="tel:+19057914000" class="cta-primary">Experience the Difference - Call Today</a>
                 </div>
             </div>
         </section>
 
         <!-- SECTION: about -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about-content">
                     <div class="about-text">
-                        <h3>Exceptional Dental Care in Brampton</h3>
-                        <p>At Peel Dental Care, we're committed to providing comprehensive dental services in a comfortable, welcoming environment. Our experienced team combines advanced dental technology with a gentle, patient-centered approach.</p>
-                        <p>Located conveniently in Peel Centre, we've been serving the Brampton community with distinction, earning the trust of families throughout the region. Our 4.9-star rating reflects our dedication to excellence in every aspect of dental care.</p>
+                        <h2 class="section-title">About Peel Dental Care</h2>
+                        <p>[Suggested: Located in the heart of Brampton, Peel Dental Care has been serving the community with exceptional dental services. Our experienced team is dedicated to providing personalized care in a comfortable, modern environment.]</p>
+                        <p>[Suggested: We believe in building long-term relationships with our patients through honest communication, gentle care, and the latest dental technologies. Your oral health and satisfaction are our top priorities.]</p>
                         <div class="about-features">
                             <div class="feature">
-                                <span class="feature-icon">🏥</span>
-                                <span>[Suggested: Modern facility with latest technology]</span>
+                                <span class="feature-icon">✓</span>
+                                <span>[Suggested: Modern Equipment & Technology]</span>
                             </div>
                             <div class="feature">
-                                <span class="feature-icon">👨‍⚕️</span>
-                                <span>[Suggested: Experienced, caring dental professionals]</span>
+                                <span class="feature-icon">✓</span>
+                                <span>[Suggested: Experienced & Caring Team]</span>
                             </div>
                             <div class="feature">
-                                <span class="feature-icon">👨‍👩‍👧‍👦</span>
-                                <span>[Suggested: Family-friendly environment for all ages]</span>
+                                <span class="feature-icon">✓</span>
+                                <span>[Suggested: Flexible Scheduling Options]</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✓</span>
+                                <span>[Suggested: Insurance Plans Accepted]</span>
                             </div>
                         </div>
                     </div>
                     <div class="about-image">
-                        <div class="about-placeholder">
-                            <span>Professional Team Photo</span>
+                        <div class="about-image-placeholder">
+                            <svg viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="var(--bg-alt)"/>
+                                <circle cx="200" cy="150" r="50" fill="var(--secondary)" opacity="0.3"/>
+                                <text x="200" y="220" text-anchor="middle" fill="var(--text-light)" font-size="14">Our Modern Office</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: booking -->
+        <section class="booking" id="booking">
+            <div class="container">
+                <div class="booking-content">
+                    <h2 class="section-title">Ready to Schedule Your Appointment?</h2>
+                    <p class="section-subtitle">Join the 392+ patients who trust Peel Dental Care for their family's oral health.</p>
+                    <div class="booking-options">
+                        <a href="tel:+19057914000" class="booking-option phone-option">
+                            <div class="option-icon">📞</div>
+                            <h3>Call Now</h3>
+                            <p>(905) 791-4000</p>
+                            <span class="option-cta">Immediate Response</span>
+                        </a>
+                        <div class="booking-option online-option">
+                            <div class="option-icon">💻</div>
+                            <h3>[Suggested: Book Online]</h3>
+                            <p>[Suggested: 24/7 Online Scheduling]</p>
+                            <button class="option-cta" onclick="alert('Online booking system would be integrated here')">Schedule Now</button>
                         </div>
                     </div>
                 </div>
@@ -177,55 +224,31 @@
             <div class="container">
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>Visit Us in Brampton</h3>
+                        <h2 class="section-title">Visit Our Brampton Office</h2>
                         <div class="contact-details">
                             <div class="contact-item">
-                                <span class="contact-icon">📍</span>
-                                <div>
-                                    <strong>Address</strong>
-                                    <p>40 Peel Centre Dr #115<br>Brampton, ON L6T 4B4, Canada</p>
-                                </div>
+                                <strong>Address:</strong>
+                                <span>40 Peel Centre Dr #115<br>Brampton, ON L6T 4B4, Canada</span>
                             </div>
                             <div class="contact-item">
-                                <span class="contact-icon">📞</span>
-                                <div>
-                                    <strong>Phone</strong>
-                                    <p><a href="tel:+19057914000">+1 905-791-4000</a></p>
-                                </div>
+                                <strong>Phone:</strong>
+                                <a href="tel:+19057914000">(905) 791-4000</a>
                             </div>
                             <div class="contact-item">
-                                <span class="contact-icon">⏰</span>
-                                <div>
-                                    <strong>Hours</strong>
-                                    <p>[Suggested: Mon-Fri 9:00am-6:00pm<br>Sat 9:00am-3:00pm<br>Sun Closed]</p>
-                                </div>
+                                <strong>Hours:</strong>
+                                <span>[Suggested: Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 9:00 AM - 3:00 PM<br>Sun: Closed]</span>
                             </div>
                         </div>
                     </div>
-                    <div class="contact-form">
-                        <h4>Book Your Appointment</h4>
-                        <form class="appointment-form">
-                            <div class="form-row">
-                                <input type="text" placeholder="Your Name" required>
-                                <input type="tel" placeholder="Phone Number" required>
-                            </div>
-                            <input type="email" placeholder="Email Address" required>
-                            <select required>
-                                <option value="">Select Service</option>
-                                <option>General Checkup</option>
-                                <option>Cleaning</option>
-                                <option>Emergency Care</option>
-                                <option>Cosmetic Consultation</option>
-                                <option>Other</option>
-                            </select>
-                            <textarea placeholder="Preferred date/time or additional message" rows="3"></textarea>
-                            <button type="submit" class="cta-button">Book Appointment</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="map-container">
-                    <div class="map-placeholder">
-                        <span>Interactive Map - 40 Peel Centre Dr #115, Brampton, ON</span>
+                    <div class="contact-map">
+                        <div class="map-placeholder">
+                            <svg viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="var(--bg-alt)"/>
+                                <circle cx="200" cy="150" r="10" fill="var(--primary)"/>
+                                <text x="200" y="200" text-anchor="middle" fill="var(--text-light)" font-size="12">40 Peel Centre Dr #115</text>
+                                <text x="200" y="215" text-anchor="middle" fill="var(--text-light)" font-size="12">Brampton, ON</text>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -236,89 +259,29 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <h4>Peel Dental Care</h4>
-                    <p>Exceptional dental care in the heart of Brampton</p>
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <h3>Peel Dental Care</h3>
+                        <p>Quality Family Dentistry in Brampton</p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-item">
+                            <strong>Phone:</strong> <a href="tel:+19057914000">(905) 791-4000</a>
+                        </div>
+                        <div class="footer-item">
+                            <strong>Address:</strong> 40 Peel Centre Dr #115, Brampton, ON L6T 4B4
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Peel Dental Care. All rights reserved.</p>
                     <div class="footer-rating">
-                        <div class="stars">★★★★★</div>
-                        <span>4.9 stars • 392 Google reviews</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span>4.9/5 (392 reviews)</span>
                     </div>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h5>Services</h5>
-                        <a href="#services">General Dentistry</a>
-                        <a href="#services">Cosmetic Dentistry</a>
-                        <a href="#services">Restorative Care</a>
-                        <a href="#services">Emergency Care</a>
-                    </div>
-                    <div class="footer-column">
-                        <h5>Contact</h5>
-                        <p>40 Peel Centre Dr #115<br>Brampton, ON L6T 4B4</p>
-                        <a href="tel:+19057914000">+1 905-791-4000</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Peel Dental Care. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Smooth scroll for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        // Observe all sections and cards
-        document.querySelectorAll('section, .service-card, .review-card').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Form submission handler
-        document.querySelector('.appointment-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you! We will contact you shortly to confirm your appointment.');
-        });
-    </script>
 </body>
 </html>
